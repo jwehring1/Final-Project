@@ -1,0 +1,162 @@
+.topHeader {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    color: #ffffff;
+    margin: 0px;
+
+}
+
+.mainImage {
+    background: url('suburban-houses.jpg');
+    z-index: -30;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    filter:blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+.mainTitle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    color: #600040;
+}
+
+.navWrapper {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navButton {
+    background-color: #333;
+    float: left;
+}
+
+.navButton a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navButton a:hover {
+    background-color: #111;
+}
+
+.active {
+    float: left;
+    background-color: #2c5699;
+}
+
+.active a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.active a:hover {
+    background-color: #254880;
+}
+
+
+@media screen and (max-width: 500px) {
+    ul.navWrapper li.right,
+    ul.navWrapper li {float: none;}
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: Georgia, serif; font-style: italic; color: #004060; }
+body {
+    background-color: #eeeeee;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #1e1e1e;
+}
+
+.wrapperBirds{
+    position: relative;
+}
+
+p{
+    z-index:1;
+}
+
+.viewtable {
+    padding: 10px;
+    border-collapse: collapse;
+}
+.viewth, .viewtd {
+    border: 3px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.viewth:first-child {
+    font-weight: bold
+}
+
+.draw-border {
+    box-shadow: inset 0 0 0 4px #d15873;
+    color: #d15873;
+    transition: color 0.25s 0.08333s;
+    position: relative;
+}
+.draw-border::before, .draw-border::after {
+    border: 0 solid transparent;
+    box-sizing: border-box;
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+}
+.draw-border::before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+.draw-border::after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+.draw-border:hover {
+    color: #58afd1;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+    border-color: #58afd1;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+.draw-border:hover::before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+    transition-delay: 0s, 0.25s, 0s;
+}
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1.5;
+    font: 700 1.2rem 'Roboto Slab', sans-serif;
+    padding: 1em 2em;
+    letter-spacing: 0.05rem;
+}
+.btn:focus {
+    outline: 2px dotted #55d7dc;
+}
+
