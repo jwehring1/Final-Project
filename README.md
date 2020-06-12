@@ -1,0 +1,3 @@
+# Final Project
+<b>Description</b><br \>
+A 3 week solo training project designed to teach how to be a full-stack developer by creating a website using Java, Spring, and Tomcat from the ground up. I first developed the MVC with each component, then moved on to adding spring and tomcat to bring the website online to the local host. From there I added the sql database using MySql to allow for easy filtering and access to the data. Then I developed the HTML and CSS of the site to make it more interactive and user friendly. Finally an extra week was spent designing and adding JUnit testing to cover the scope of each feature to fully mark the project as complete.
